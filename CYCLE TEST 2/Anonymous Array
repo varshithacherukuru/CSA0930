@@ -1,0 +1,21 @@
+class AnonymousArrayExample {
+    public static void main(String[] args) {
+        printArray(new int[]{1, 2, 3, 4, 5});
+        int sum = calculateSum(new int[]{1, 2, 3, 4, 5});
+        System.out.println("Sum of elements: " + sum);
+    }
+    public static void printArray(int[] array) {
+        System.out.print("Elements of the array: ");
+        for (int element : array) {
+            System.out.print(element + " ");
+        }
+        System.out.println();
+    }
+    public static int calculateSum(int[] array) {
+        int sum = 0;
+        for (int element : array) {
+            sum += element;
+        }
+        return sum;
+    }
+}
