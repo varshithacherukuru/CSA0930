@@ -1,0 +1,21 @@
+class ArrayChecker { 
+    public static boolean containsElement(int[] array, int targetElement) {
+        for (int element : array) {
+            if (element == targetElement) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    public static void main(String[] args) {
+        int[] myArray = {1, 2, 3, 4, 5};
+        int targetElement = 3;
+
+        if (containsElement(myArray, targetElement)) {
+            System.out.println("Element " + targetElement + " exists in the array.");
+        } else {
+            System.out.println("Element " + targetElement + " does not exist in the array.");
+        }
+    }
+}
