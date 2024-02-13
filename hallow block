@@ -1,0 +1,21 @@
+import java.util.Scanner;
+class HollowBlock {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter the size of the hollow block: ");
+        int size = scanner.nextInt();
+        displayHollowBlock(size);
+    }
+    public static void displayHollowBlock(int size) {
+        for (int i = 0; i < size; i++) {
+            for (int j = 0; j < size; j++) {
+                if (i == 0 || i == size - 1 || j == 0 || j == size - 1) {
+                    System.out.print("* ");
+                } else {
+                    System.out.print("  ");
+                }
+            }
+            System.out.println();
+        }
+    }
+}
